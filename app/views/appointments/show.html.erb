@@ -1,4 +1,4 @@
 <h1>Appointment Details</h1>
-Date and Time: <%= @appointment..appointment_datetime.strftime("%B %d, %Y at %H:%M")%>
+Date and Time: <%= @appointment.appointment_datetime.strftime("%B %d, %Y at %H:%M")%>
 Patient: <%= @appointment.patient.name%>
 Doctor : <%= @appointment.doctor.name%>
