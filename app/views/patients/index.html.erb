@@ -1,0 +1,6 @@
+<h1>Patients</h1>
+<% @patients.each do |pat|%>
+  <p>
+    <%=link_to pat.name, patient_path(pat)%> Appointment Count: <%=pat.appointments.count%>
+  </p>
+<%end%>
